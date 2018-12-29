@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="computerWorld.com Suite">
+	<!-- parallel="tests" thread-count="5"> -->
+	<listeners>
+		<listener
+			class-name="webSite.listeners.listenersImplementation"></listener>
+	</listeners>
+
+	<test name="HomePage ">
+		<classes>
+			<class name="ComputerWorld.homePage.homePageTest"></class>
+		</classes>
+	</test>
+	<test name="Main Carousel ">
+		<classes>
+			<class name="ComputerWorld.mainCarousel.mainCarouselTest"></class>
+		</classes>
+	</test>
+	<test name="Main Crawl ">
+		<classes>
+			<class name="ComputerWorld.mainCrawl.CrawlTest"></class>
+		</classes>
+	</test>
+	<test name="Resource">
+		<classes>
+			<class name="ComputerWorld.resources.ResourcesTest"></class>
+		</classes>
+	</test>
+
+</suite>
